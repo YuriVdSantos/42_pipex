@@ -6,7 +6,7 @@
 /*   By: yurivieiradossantos <yurivieiradossanto    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/01/11 22:01:50 by yurivieirad       #+#    #+#             */
-/*   Updated: 2025/01/11 22:16:30 by yurivieirad      ###   ########.fr       */
+/*   Updated: 2025/01/11 22:42:18 by yurivieirad      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ int processe_forks(int argc, char **argv)
 	int	pid1 = fork();
 	if (pid1 < 0) 
 		return 2;
-	
+	//Need to add error handling
 	if(pid1 == 0)
 	{
 		dup2(fd[1], STDOUT_FILENO);
