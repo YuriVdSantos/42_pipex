@@ -3,16 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yurivieiradossantos <yurivieiradossanto    +#+  +:+       +#+        */
+/*   By: yvieira- <yvieira-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/12 10:19:49 by yurivieirad       #+#    #+#             */
-/*   Updated: 2025/01/12 10:29:59 by yurivieirad      ###   ########.fr       */
+/*   Created: 2025/01/12 12:43:02 by yvieira-          #+#    #+#             */
+/*   Updated: 2025/01/12 15:25:11 by yvieira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "pipex.h"
 
-int	main( int argc, char* argv[], char **env)
+int	main( int argc, char **argv, char **env)
 {
 	if(argc != 5)
 		EXIT_FAILURE;

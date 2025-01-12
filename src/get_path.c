@@ -3,21 +3,29 @@
 /*                                                        :::      ::::::::   */
 /*   get_path.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yurivieiradossantos <yurivieiradossanto    +#+  +:+       +#+        */
+/*   By: yvieira- <yvieira-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/12 10:03:21 by yurivieirad       #+#    #+#             */
-/*   Updated: 2025/01/12 10:03:31 by yurivieirad      ###   ########.fr       */
+/*   Created: 2025/01/12 12:43:24 by yvieira-          #+#    #+#             */
+/*   Updated: 2025/01/12 15:20:31 by yvieira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "pipex.h"
 
-char *get_path(char **env)
+char	**ft_split(char const *s, char c);
+int	ft_strncmp(const char *str1, const char *str2, size_t n);
+
+
+char **get_path(char **env)
 {
 	int i = 0;
+	if(!env)
+		return (NULL);
+	
 	while (env[i] && ft_strncmp(env[i], "PATH", 4) != 0)
 		i++;
-	if (!env[i])
+	if (!env)
 		return (NULL);
-	return (env[i] + 5);
+	return (ft_split(*env, ':'));
 }

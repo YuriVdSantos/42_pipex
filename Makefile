@@ -1,4 +1,4 @@
-NAME = meu_programa
+NAME = pipex
 
 SRCDIR = src
 INCDIR = include

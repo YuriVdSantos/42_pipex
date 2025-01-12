@@ -3,12 +3,13 @@
 /*                                                        :::      ::::::::   */
 /*   core_process.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: yurivieiradossantos <yurivieiradossanto    +#+  +:+       +#+        */
+/*   By: yvieira- <yvieira-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2025/01/11 22:01:50 by yurivieirad       #+#    #+#             */
-/*   Updated: 2025/01/12 10:19:26 by yurivieirad      ###   ########.fr       */
+/*   Created: 2025/01/12 12:43:28 by yvieira-          #+#    #+#             */
+/*   Updated: 2025/01/12 12:43:29 by yvieira-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 
 #include "pipex.h"
 
