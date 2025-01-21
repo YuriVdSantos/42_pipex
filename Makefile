@@ -1,15 +1,12 @@
 NAME = pipex
 
-SRCDIR = src
-INCDIR = include
 LIBFTDIR = libft
 
-SRC = $(SRCDIR)/main.c $(SRCDIR)/core_process.c $(SRCDIR)/pipex.c $(SRCDIR)/get_path.c $(SRCDIR)/split_cmd.c
-OBJ = $(SRC:.c=.o)
-CC = gcc
-CFLAGS = -Wall -Wextra -Werror -I$(INCDIR) -I$(LIBFTDIR)
+SRC = src/pipex.c src/utils.c
+OBJ = $(SRC:%.c=%.o)
+CC = cc 
+CFLAGS = -g -Wall -Wextra -Werror -I$(LIBFTDIR)
 
-# Biblioteca libft
 LIBFT = $(LIBFTDIR)/libft.a
 
 all: $(LIBFT) $(NAME)
